@@ -1,7 +1,8 @@
-Porject Description voir https://github.com/M-Lahmer/backend-api-v1.wiki.git
+# Porject Description voir https://github.com/M-Lahmer/backend-api-v1.wiki.git
 
-#Updates 
-- backend-deployment.yaml
+## Updates 
+on accede au pod en mode sh pour executer mkdir -p /app/logs;chmod 777 /app/logs et   uvicorn main:app --host 0.0.0.0 --port 8000
+```backend-deployment.yaml
   command: ["sh", "-c"]
           args:
           - |
@@ -10,5 +11,4 @@ Porject Description voir https://github.com/M-Lahmer/backend-api-v1.wiki.git
             chmod 777 /app/logs
             # Start the application
             uvicorn main:app --host 0.0.0.0 --port 8000
-- DockerFile
--   
+
