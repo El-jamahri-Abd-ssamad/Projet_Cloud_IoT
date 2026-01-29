@@ -1,0 +1,121 @@
+2026-01-29 23:07:31,464 - __main__ - WARNING - Could not include device routes: Class <class 'sqlalchemy.sql.elements.SQLCoreOperations'> directly inherits TypingOnly but has additional attributes {'__static_attributes__', '__firstlineno__'}.
+2026-01-29 23:07:31,466 - __main__ - INFO - Server starting on 0.0.0.0:8000
+2026-01-29 23:07:32,909 - __mp_main__ - WARNING - Could not include device routes: Class <class 'sqlalchemy.sql.elements.SQLCoreOperations'> directly inherits TypingOnly but has additional attributes {'__firstlineno__', '__static_attributes__'}.
+2026-01-29 23:07:32,992 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:33,407 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:33,966 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:34,048 - main - WARNING - Could not include device routes: Class <class 'sqlalchemy.sql.elements.SQLCoreOperations'> directly inherits TypingOnly but has additional attributes {'__firstlineno__', '__static_attributes__'}.
+2026-01-29 23:07:34,052 - main - INFO - Starting Device Management API v1.0.0
+2026-01-29 23:07:34,092 - main - WARNING - Database initialization skipped: Class <class 'sqlalchemy.sql.elements.SQLCoreOperations'> directly inherits TypingOnly but has additional attributes {'__firstlineno__', '__static_attributes__'}.
+2026-01-29 23:07:34,336 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:34,689 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:35,047 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:35,411 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:35,770 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:36,120 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:36,476 - pika.adapters.utils.selector_ioloop_adapter - ERROR - Address resolution failed: gaierror(11001, 'getaddrinfo failed')
+2026-01-29 23:07:36,478 - pika.adapters.utils.connection_workflow - ERROR - getaddrinfo failed: gaierror(11001, 'getaddrinfo failed').
+2026-01-29 23:07:36,479 - pika.adapters.utils.connection_workflow - ERROR - AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - gaierror(11001, 'getaddrinfo failed'); first exception - None.
+2026-01-29 23:07:36,480 - pika.adapters.utils.connection_workflow - ERROR - AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - gaierror(11001, 'getaddrinfo failed'); first exception - None
+2026-01-29 23:07:36,481 - pika.adapters.blocking_connection - ERROR - Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - gaierror(11001, 'getaddrinfo failed'); first exception - None
+2026-01-29 23:07:36,481 - pika.adapters.blocking_connection - ERROR - Error in _create_connection().
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Bureau\icons\.venv\Lib\site-packages\pika\adapters\blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+  File "C:\Users\hp\OneDrive\Bureau\icons\.venv\Lib\site-packages\pika\adapters\utils\selector_ioloop_adapter.py", line 565, in _resolve
+    result = socket.getaddrinfo(self._host, self._port, self._family,
+                                self._socktype, self._proto,
+                                self._flags)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 983, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-01-29 23:07:36,495 - helpers.rabbitmq_helper - ERROR - Failed to connect to RabbitMQ: [Errno 11001] getaddrinfo failed
+2026-01-29 23:07:36,497 - main - WARNING - RabbitMQ connection failed (optional): [Errno 11001] getaddrinfo failed
+2026-01-29 23:07:36,531 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:36,985 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:37,387 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:37,797 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:38,213 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:38,621 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:39,025 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:39,454 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:39,861 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:40,264 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:40,659 - helpers.redis_helper - ERROR - Failed to connect to Redis: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+2026-01-29 23:07:40,660 - main - WARNING - Redis not available, caching disabled
+2026-01-29 23:07:40,672 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:41,032 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:41,440 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:41,849 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:42,261 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:42,721 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:43,086 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:43,505 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:43,910 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:44,313 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:44,726 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:45,094 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:45,546 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:45,907 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:46,324 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:46,733 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:47,139 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:47,504 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:47,916 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:48,322 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:48,731 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:49,252 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:49,865 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:50,277 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:50,648 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:51,059 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:51,462 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:51,881 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:52,294 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:52,725 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:53,147 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:53,568 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:53,977 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:54,341 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:54,757 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:55,174 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:55,578 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:55,994 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:56,358 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:56,761 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:57,163 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:57,565 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:57,976 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:58,386 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:58,790 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:59,209 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:07:59,654 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:00,072 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:00,477 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:00,884 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:01,287 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:01,641 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:02,062 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:02,473 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:02,892 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:03,308 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:03,677 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:04,099 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:04,504 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:04,908 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:05,324 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:05,733 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:06,139 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:06,545 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:06,955 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:07,363 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:07,771 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:08,176 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:08,583 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:08,989 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:09,397 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:09,763 - watchfiles.main - INFO - 1 change detected
+2026-01-29 23:08:10,306 - main - INFO - Shutting down...
+2026-01-29 23:08:10,307 - helpers.redis_helper - INFO - Redis connection closed
+2026-01-29 23:08:10,307 - main - INFO - Application shutdown complete

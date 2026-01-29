@@ -6,8 +6,7 @@ from helpers.config import Base,engine
 app=FastAPI(
 title="Authentication app",
 description="Micro service signing app "
-)
-#create one time
+)#create one time
 Base.metadata.create_all(bind=engine)
 app.include_router(router)
 

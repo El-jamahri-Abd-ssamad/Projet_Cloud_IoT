@@ -1,0 +1,156 @@
+2026-01-28 18:06:19,386 - ERROR - Failed to connect to Redis: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+2026-01-28 18:06:19,497 - WARNING - Failed to create database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "admin"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-01-28 18:06:19,504 - WARNING - Continuing without database initialization. Make sure your database is running.
+2026-01-28 18:06:19,541 - INFO - Server starting on 0.0.0.0:8000
+2026-01-28 18:06:19,685 - WARNING - Failed to create database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "admin"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-01-28 18:06:19,689 - WARNING - Continuing without database initialization. Make sure your database is running.
+2026-01-28 18:06:19,719 - INFO - Starting Authentication API v1.0.0
+2026-01-28 18:06:19,746 - ERROR - Database initialization failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "admin"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-01-28 18:06:23,825 - ERROR - error when creating transport: <AMQPConnectionError: (22, 'Le système distant a refusé la connexion réseau', None, 1225, None)>
+2026-01-28 18:06:23,829 - INFO - Connection to amqp://guest:******@localhost:5672//?heartbeat=600 closed. Reconnecting after 5 seconds.
+2026-01-28 18:06:23,830 - ERROR - Failed to connect to RabbitMQ: [WinError 1225] Le système distant a refusé la connexion réseau
+2026-01-28 18:06:23,833 - ERROR - RabbitMQ connection failed: [WinError 1225] Le système distant a refusé la connexion réseau
+2026-01-28 18:06:27,900 - ERROR - Failed to connect to Redis: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+2026-01-28 18:06:27,901 - WARNING - Redis not available, caching disabled
+2026-01-28 18:08:17,484 - ERROR - Unhandled exception: module 'helpers.config' has no attribute 'APP_NAME'
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\_utils.py", line 85, in collapse_excgroups
+    raise exc
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\hp\OneDrive\Bureau\iot\backend-api-v1\main.py", line 107, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\fastapi\routing.py", line 119, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\fastapi\routing.py", line 105, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\fastapi\routing.py", line 385, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\fastapi\routing.py", line 284, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\hp\OneDrive\Bureau\iot\backend-api-v1\main.py", line 155, in root
+    "message": config.APP_NAME,
+               ^^^^^^^^^^^^^^^
+AttributeError: module 'helpers.config' has no attribute 'APP_NAME'
+2026-01-28 18:08:27,470 - INFO - POST /api/v1/auth/register - Status: 404 - Time: 0.47ms
+2026-01-28 18:08:34,768 - INFO - POST /api/v1/auth/register - Status: 404 - Time: 0.56ms
+2026-01-28 18:08:41,926 - INFO - POST /api/v1/auth/login - Status: 404 - Time: 0.79ms
+2026-01-28 18:08:47,373 - INFO - GET /api/v1/devices - Status: 307 - Time: 0.29ms
+2026-01-28 18:08:47,390 - ERROR - Database session error: 401: Invalid authorization format
+2026-01-28 18:08:47,393 - INFO - GET /api/v1/devices/ - Status: 401 - Time: 8.12ms
+2026-01-28 18:08:52,830 - INFO - GET /api/v1/devices - Status: 307 - Time: 0.54ms
+2026-01-28 18:08:52,841 - ERROR - Database session error: 401: Invalid authorization format
+2026-01-28 18:08:52,854 - INFO - GET /api/v1/devices/ - Status: 401 - Time: 14.65ms
+2026-01-28 18:08:56,014 - INFO - POST /api/v1/devices - Status: 307 - Time: 0.34ms
+2026-01-28 18:08:56,022 - ERROR - Database session error: 401: Invalid authorization format
+2026-01-28 18:08:56,023 - INFO - POST /api/v1/devices/ - Status: 401 - Time: 2.66ms
+2026-01-28 18:09:40,091 - ERROR - Unhandled exception: module 'helpers.config' has no attribute 'APP_NAME'
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\_utils.py", line 85, in collapse_excgroups
+    raise exc
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\hp\OneDrive\Bureau\iot\backend-api-v1\main.py", line 107, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\fastapi\routing.py", line 119, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\fastapi\routing.py", line 105, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\fastapi\routing.py", line 385, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\hp\OneDrive\Bureau\iot\.venv\Lib\site-packages\fastapi\routing.py", line 284, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\hp\OneDrive\Bureau\iot\backend-api-v1\main.py", line 155, in root
+    "message": config.APP_NAME,
+               ^^^^^^^^^^^^^^^
+AttributeError: module 'helpers.config' has no attribute 'APP_NAME'
+2026-01-28 18:09:40,355 - INFO - GET /favicon.ico - Status: 404 - Time: 0.27ms
+2026-01-28 18:10:08,806 - INFO - POST /api/v1/auth/register - Status: 404 - Time: 1.00ms
+2026-01-28 18:10:36,819 - INFO - Shutting down...
+2026-01-28 18:10:36,820 - INFO - RabbitMQ connection closed
